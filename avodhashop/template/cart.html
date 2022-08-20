@@ -1,0 +1,267 @@
+{% load static %}
+
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  
+  <style>
+    body {
+      background: #ddd;
+      min-height: 100vh;
+      vertical-align: middle;
+      display: flex;
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .title {
+      margin-bottom: 5vh;
+    }
+
+    .card {
+      margin: auto;
+      max-width: 950px;
+      width: 90%;
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 1rem;
+      border: transparent;
+    }
+
+    @media(max-width:767px) {
+      .card {
+        margin: 3vh auto;
+      }
+    }
+
+    .cart {
+      background-color: #fff;
+      padding: 4vh 5vh;
+      border-bottom-left-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+
+    @media(max-width:767px) {
+      .cart {
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+      }
+    }
+
+    .summary {
+      background-color: #ddd;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      padding: 4vh;
+      color: rgb(65, 65, 65);
+    }
+
+    @media(max-width:767px) {
+      .summary {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem;
+      }
+    }
+
+    .summary .col-2 {
+      padding: 0;
+    }
+
+    .summary .col-10 {
+      padding: 0;
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    .title b {
+      font-size: 1.5rem;
+    }
+
+    .main {
+      margin: 0;
+      padding: 2vh 0;
+      width: 100%;
+    }
+
+    .col-2,
+    .col {
+      padding: 0 1vh;
+    }
+
+    a {
+      padding: 0 1vh;
+    }
+
+    .close {
+      margin-left: auto;
+      font-size: 0.7rem;
+    }
+
+    img {
+      width: 3.5rem;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      padding: 5px;
+      width: 100px;
+
+
+
+    }
+
+    .back-to-shop {
+      margin-top: 4.5rem;
+    }
+
+    h5 {
+      margin-top: 4vh;
+    }
+
+    hr {
+      margin-top: 1.25rem;
+    }
+
+    form {
+      padding: 2vh 0;
+    }
+
+    select {
+      border: 1px solid rgba(0, 0, 0, 0.137);
+      padding: 1.5vh 1vh;
+      margin-bottom: 4vh;
+      outline: none;
+      width: 100%;
+      background-color: rgb(247, 247, 247);
+    }
+
+    input {
+      border: 1px solid rgba(0, 0, 0, 0.137);
+      padding: 1vh;
+      margin-bottom: 4vh;
+      outline: none;
+      width: 100%;
+      background-color: rgb(247, 247, 247);
+    }
+
+    input:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    .btn {
+      background-color: #000;
+      border-color: #000;
+      color: white;
+      width: 100%;
+      font-size: 0.7rem;
+      margin-top: 4vh;
+      padding: 1vh;
+      border-radius: 0;
+    }
+
+    .btn:focus {
+      box-shadow: none;
+      outline: none;
+      box-shadow: none;
+      color: white;
+      -webkit-box-shadow: none;
+      -webkit-user-select: none;
+      transition: none;
+    }
+
+    .btn:hover {
+      color: white;
+    }
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      color: black;
+      text-decoration: none;
+    }
+
+    #code {
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+      background-repeat: no-repeat;
+      background-position-x: 95%;
+      background-position-y: center;
+    }
+    .buttonX{
+      border: 1px solid rgb(255, 133, 57);
+      border-radius:8px ;
+      padding: 3px;
+      font-size:8;
+    }
+  </style>
+
+
+  
+
+
+</head>
+
+<body>
+  
+
+  <div class="card">
+    <div class="row">
+      <div class="col-md-12 cart">
+        <div class="title">
+          <div class="row">
+            <div class="col">
+              
+              <h4 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="/"><b>FOOD🍝CORNER<span style="color:red ;">_Cart</span></b></a></h4>
+            </div>
+            <div class="col align-self-center text-right text-muted">{{itc}}</div>
+          </div>
+        </div>
+        {% for i in ci %}
+
+        <div class="row border-top border-bottom">
+          <div class="row main align-items-center">
+            <div class="col-2"><a href="{{i.prodt.get_url}}"><img class="img-fluid" src="{{i.prodt.img.url}}" alt="{{i.prodt.name}} "></div>
+            <div class="col">
+              <div class="row">{{i.prodt.name}}</a></div>
+            </div>
+            <div class="col">
+              <a href="{% url 'cart_decrement' i.prodt.id %}">&#x2212;</a><a href="#" class="border">{{i.quan}}</a><a
+                href="{% url 'addcart' i.prodt.id %}">&#x2b;</a>
+            </div>
+            <div class="col">${{i.total}} <a href="{% url 'remove' i.prodt.id %}"><span class="close"><button class="button buttonX">&#10060;</button></span></a></div>
+          </div>
+        </div>
+        <br>
+
+        {% endfor %}
+        
+
+        <div>
+          <p><span class="price"
+                  style="color:rgb(2, 2, 2); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; "><strong>Grand
+                      Total: ${{t}}</strong></span></p>
+      </div>
+
+        <div class="back-to-shop"><a href="/" style="font-size:20px;" >&#8617;</a><span class="text-muted"><strong>Back to shop</strong></span></div>
+
+      </div>
+
+<!--js--> 
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<head>
+  <style>
+    body {
+      background-color: #09635ead;
+    }
+    .content-section {
+      background:rgba(22, 21, 21, 0.589);
+      padding: 15px 25px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<div class="content-section" style=" width: 50vw; margin-left : 13vw;">
+  <h1>Login</h1>
+  <form action="" method="post">
+    {% csrf_token %}
+    <fieldset class="form-group">
+      <legend class="border-bottom mb-4">Log In</legend>
+      {{ form|crispy }}
+    </fieldset>
+    <div class="form-group">
+      <button class="btn btn-outline-info" type="submit">Login</button>
+    </div>
+  </form>
+  <div class="border-top pt-3">
+    <small class="text-muted">
+      Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign up</a>
+    </small>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <style>
+        body {
+            background-color: #065676;
+          }
+    </style>
+</head>
+    
+    <center>
+        <p style="font-size:larger ;"><b>😭</b></p>
+        <p style="text-align:center; font-size:large;"> <b> You have been logged out</b></p>
+        
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                <a href="{% url 'login' %}"><button style="color:black;  font-size:medium;" >Log In Again</button></a>
+            </small>
+        </center>
+</div>
+{% endblock %}
+
+<div class="card">
+    <div class="card-body">
+        This is some text within a card body.
+    </div>
+</div>

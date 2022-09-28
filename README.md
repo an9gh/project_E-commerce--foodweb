@@ -33,7 +33,7 @@ This is a basic ecommerce web app using
 ![Home-Head](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/Page-head-index.jpg?raw=true)
 
 
-### Items list page
+### Home-items
 ![item-list](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/item-list-index.jpg?raw=true)
 
 ### Items detailes page

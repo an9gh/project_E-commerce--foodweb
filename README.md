@@ -57,6 +57,41 @@ This is a basic ecommerce web app using
 FOOD-CORNER 
 
 ![](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/demo-food.gif?raw=true)
+# Get Started - Installaton
+
+## Step1 
+#### -Creating virtual environment and activate
+#### -Creating Project
+#### - Run Development Servere
+#### - Createing App
+
+###
+##### Activate virtualenv
+```python
+  virtualenv venv
+```
+##### Activate virtualenv
+```python
+  venv/scripts/activate
+```
+#### Create Project
+```python
+  django-admin startproject ecommmerce_project
+```
+#### Then cd to new directory newly created
+```python
+  cd ecommerce_project
+```
+#### Run Development Servere
+```python
+  python manage.py runserver
+```
+#### After entering the command, a new link will appear in your terminal. Run the link to start the development server.
+```python
+Starting development server at  http://127.0.0.1:8000/
+```
+
+
 ## Authors
 
 - [@anaghvp](https://github.com/an9gh)

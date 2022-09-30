@@ -66,6 +66,7 @@ FOOD-CORNER
 #### - Createing App
 
 ###
+#
 ##### Activate virtualenv
 ```python
   virtualenv venv
@@ -88,7 +89,7 @@ FOOD-CORNER
 ```
 #### After entering the command, a new link will appear in your terminal. Run the link to start the development server.
 ```python
-Starting development server at  http://127.0.0.1:8000/
+ http://127.0.0.1:8000/
 ```
 
 

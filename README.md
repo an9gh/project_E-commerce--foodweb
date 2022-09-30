@@ -65,7 +65,7 @@ This is a basic ecommerce web app using
  http://127.0.0.1:8000/
 ```
 #
-#### If you see the below image like a webpage,you successfully created a project and are running a successful development server.
+#### If you see the below image as a webpage, you have successfully created a project and are running a successful development server.
 ## Development Server
 ![Development-server](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/django-deve-server.png?raw=true)
 ## Screenshots

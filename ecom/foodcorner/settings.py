@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'avodhashop.urls'
+ROOT_URLCONF = 'foodcorner.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'avodhashop.wsgi.application'
+WSGI_APPLICATION = 'foodcorner.wsgi.application'
 
 
 # Database

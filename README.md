@@ -52,7 +52,7 @@ This is a basic ecommerce web app using
 ### Cart Page
 ![cart-page](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/item-cart-page.jpg?raw=true)
 
-## Website Democ Gif
+## Website Demo Gif
 
 FOOD-CORNER 
 

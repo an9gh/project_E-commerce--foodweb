@@ -1,4 +1,7 @@
 
+![Logo](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/logo.jpg?raw=true)
+
+
 # Ecommerce Website 
 ## Food Corner 🍕🍝
 
@@ -7,9 +10,6 @@
 This is a basic ecommerce web app using
 
 
-
-
-![Logo](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/logo.jpg?raw=true)
 
 
 ## Frontend
@@ -52,7 +52,7 @@ This is a basic ecommerce web app using
 ### Cart Page
 ![cart-page](https://github.com/an9gh/project_E-commerce--foodweb/blob/master/screenshot/item-cart-page.jpg?raw=true)
 
-## Website Demo Gif
+## Website Democ Gif
 
 FOOD-CORNER 
 
